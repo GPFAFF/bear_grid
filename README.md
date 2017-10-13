@@ -1,5 +1,5 @@
 # BEAR GRID STYLE FRAMEWORK
 
-![Bear Pic](./bear.jpg)
+![Bear Pic](https://raw.githubusercontent.com/GPFAFF/bear_grid/master/bear.jpg)
 
 ## Light CSS GRID framework
