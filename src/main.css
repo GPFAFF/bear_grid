@@ -1,0 +1,113 @@
+:root {
+  --primary: #bada55;
+  --secondary: #b50000;
+  --background-body: #000000;
+  --white: #fff;
+  --black: #000;
+  --blue: #00f;
+  --transition: .1s transform ease-in-out;
+  --main-header: 60px;
+  --secondary-header: 48px;
+  --tertiary-header: 40px;
+  --quarternary-header: 32px;
+  --quinary-header: 24px;
+  --senary-header: 20px;
+  --text-font: 18px;
+  --grid: grid;
+  --gap: 40px;
+  --columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+body {
+  font-family: system-ui;
+  background-color: var(--background-body);
+  color: var(--white);
+}
+
+main {
+  text-align: center;
+}
+  
+h1 {
+  font-size: var(--main-header);
+}
+
+h2 {
+  font-size: var(--secondary-header);
+}
+
+h3 {
+  font-size: var(--tertiary-header);
+}
+
+h4 {
+  font-size: var(--quarternary-header);
+}
+
+h5 {
+  font-size: var(--quinary-header);
+}
+
+h6 {
+  font-size: var(--senary-header);
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content {
+  padding: 20px;
+}
+
+.row {
+  margin: 20px;
+}
+
+article {
+  display: var(--grid);
+  grid-gap: var(--gap);
+  grid-template-columns: var(--columns);
+  padding: 10px;
+}
+
+.chunk {
+  align-self: center;
+  color: blue;
+  padding: 40px;
+  background-color: var(--white);
+}
+
+button {
+  font-size: 1rem;
+  apperance: none;
+  border: 0;
+  padding: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+  
+  &.primary {
+    background-color: var(--primary); 
+    width: 200px;
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  }
+  &.secondary {
+    background-color: var(--blue);
+    width: 125px;
+
+    &:hover {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+}
